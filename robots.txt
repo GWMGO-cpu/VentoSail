@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ventosail.com/sitemap.xml
+

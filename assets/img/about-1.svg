@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="ga1" x1="0" x2="1">
+      <stop offset="0" stop-color="#14233b"/>
+      <stop offset="1" stop-color="#0f1e35"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" fill="url(#ga1)"/>
+  <g opacity="0.22" fill="#2ec5ff">
+    <path d="M0 360c120-40 240-40 360 0s240 40 360 0v120H0V360z"/>
+  </g>
+</svg>
+

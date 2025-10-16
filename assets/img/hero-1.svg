@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#0a1938"/>
+      <stop offset="1" stop-color="#0b2440"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g1)"/>
+  <g opacity="0.25" fill="#2ec5ff">
+    <path d="M0 700c200-60 400-60 600 0s400 60 600 0 400-60 400-60v260H0V700z"/>
+  </g>
+  <g opacity="0.18" fill="#7df3a7">
+    <circle cx="1400" cy="200" r="140"/>
+  </g>
+</svg>
+
