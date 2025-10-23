@@ -1,34 +1,51 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VentoSail 全球航运 | ventosail.com</title>
-  <meta name="description" content="VentoSail 提供覆盖全球主要航线的专业航运与物流解决方案：欧洲航线、每周航线、澳洲航线与定制化运输服务。" />
-  <meta property="og:title" content="VentoSail 全球航运" />
-  <meta property="og:description" content="覆盖全球主要航线的专业航运与物流解决方案" />
+  <title>VentoSail Global Shipping & Logistics | ventosail.com</title>
+  <meta name="description" content="VentoSail provides professional global shipping and logistics solutions across major trade lanes: Europe routes, weekly fixed services, Australia routes, and customized door-to-door transport." />
+  <meta property="og:title" content="VentoSail Global Shipping" />
+  <meta property="og:description" content="Professional shipping solutions covering major global routes" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ventosail.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VentoSail Global Shipping & Logistics" />
+  <meta name="twitter:description" content="Europe/Australia weekly services, FCL/LCL door-to-door, compliant customs clearance, full-visibility tracking." />
+  <link rel="canonical" href="https://ventosail.com/" />
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="preload" href="assets/css/styles.css" as="style" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Optional hreflang using URL parameters for language selection -->
+  <link rel="alternate" href="https://ventosail.com/?lang=en" hreflang="en" />
+  <link rel="alternate" href="https://ventosail.com/?lang=zh" hreflang="zh-CN" />
+  <link rel="alternate" href="https://ventosail.com/" hreflang="x-default" />
 </head>
 <body>
-  <!-- 顶部联系栏 -->
+  <!-- Top contact bar -->
   <div class="topbar">
     <div class="container topbar-inner">
       <div class="contact-item">
-        <span class="contact-label">Email</span>
-        <a href="mailto:luoposhandsg@gmail.com" aria-label="发送电子邮件到 VentoSail">luoposhandsg@gmail.com</a>
+        <span class="contact-label" data-i18n="top.emailLabel">Email</span>
+        <a href="mailto:luoposhandsg@gmail.com" aria-label="Send email to VentoSail">luoposhandsg@gmail.com</a>
       </div>
       <div class="contact-item">
-        <span class="contact-label">WhatsApp</span>
-        <a href="https://wa.me/8613539080327" target="_blank" rel="noopener" aria-label="在 WhatsApp 联系 VentoSail">+86 13539080327</a>
+        <span class="contact-label" data-i18n="top.whatsLabel">WhatsApp</span>
+        <a href="https://wa.me/8613539080327" target="_blank" rel="noopener" aria-label="Contact VentoSail on WhatsApp">+86 13539080327</a>
+      </div>
+
+      <!-- Language switcher -->
+      <div class="contact-item" style="margin-left:auto;">
+        <nav class="lang-switch" aria-label="Language">
+          <button type="button" class="btn outline" data-lang="en" aria-pressed="true">English</button>
+          <button type="button" class="btn outline" data-lang="zh" aria-pressed="false">中文</button>
+        </nav>
       </div>
     </div>
   </div>
 
-  <!-- 导航（可扩展） -->
+  <!-- Header / Navigation -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
@@ -36,56 +53,56 @@
         <span class="brand-text">VentoSail</span>
       </div>
       <nav class="nav">
-        <a href="#home">首页</a>
-        <a href="#about">公司信息</a>
-        <a href="#services">公司业务</a>
-        <a href="#contact">联系</a>
+        <a href="#home" data-i18n="nav.home">Home</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- 首页轮播 -->
+  <!-- Hero / Carousel -->
   <section id="home" class="hero">
     <div class="carousel" data-interval="5000">
       <div class="slides">
         <div class="slide slide-1">
           <div class="slide-content">
-            <h1>全球航运 · 高效稳定</h1>
-            <p>覆盖欧洲、澳洲与主要国际航线，提供端到端物流解决方案。</p>
+            <h1 data-i18n="hero.s1.title">Global Shipping · Efficient & Reliable</h1>
+            <p data-i18n="hero.s1.desc">Covering Europe, Australia, and major international routes with end-to-end logistics solutions.</p>
           </div>
         </div>
         <div class="slide slide-2">
           <div class="slide-content">
-            <h1>每周固定航线</h1>
-            <p>班期明确、仓位稳定，保障您的供应链节奏。</p>
+            <h1 data-i18n="hero.s2.title">Weekly Fixed Services</h1>
+            <p data-i18n="hero.s2.desc">Clear schedules and stable capacity to keep your supply chain on beat.</p>
           </div>
         </div>
         <div class="slide slide-3">
           <div class="slide-content">
-            <h1>专业团队 · 全程可视</h1>
-            <p>从订舱、报关到派送，全流程实时跟踪与服务。</p>
+            <h1 data-i18n="hero.s3.title">Expert Team · Full Visibility</h1>
+            <p data-i18n="hero.s3.desc">From booking and customs to final delivery—real-time tracking across the journey.</p>
           </div>
         </div>
         <div class="slide slide-4">
           <div class="slide-content">
-            <h1>合规安全 · 风险可控</h1>
-            <p>严格遵循国际合规标准，确保货物安全抵达。</p>
+            <h1 data-i18n="hero.s4.title">Compliance & Safety First</h1>
+            <p data-i18n="hero.s4.desc">Aligned with international regulations to ensure cargo arrives securely.</p>
           </div>
         </div>
         <div class="slide slide-5">
           <div class="slide-content">
-            <h1>定制方案 · 灵活高效</h1>
-            <p>根据行业与货型定制最优运输与成本方案。</p>
+            <h1 data-i18n="hero.s5.title">Tailored Solutions</h1>
+            <p data-i18n="hero.s5.desc">Optimized routing and cost planning based on cargo type, lead time, and budget.</p>
           </div>
         </div>
       </div>
-      <button class="control prev" aria-label="上一张">‹</button>
-      <button class="control next" aria-label="下一张">›</button>
-      <div class="dots" aria-label="轮播分页指示" role="tablist"></div>
+      <button class="control prev" aria-label="Previous slide">‹</button>
+      <button class="control next" aria-label="Next slide">›</button>
+      <div class="dots" aria-label="Carousel pagination" role="tablist"></div>
     </div>
   </section>
 
-  <!-- 公司信息（新颖布局：斜切/卡片叠加） -->
+  <!-- About -->
   <section id="about" class="about">
     <div class="angled-bg" aria-hidden="true"></div>
     <div class="container about-inner">
@@ -97,76 +114,76 @@
         </div>
       </div>
       <div class="about-content glass">
-        <h2>公司信息</h2>
-        <p>
-          VentoSail 是一家专注于全球航运与综合物流的服务商，立足中国，面向世界。
-          我们与多家船公司与海外仓网络紧密合作，提供覆盖欧洲、澳洲及主要国际干线的
-          订舱、拖车、报关、清关、派送等一体化解决方案。
+        <h2 data-i18n="about.title">About Us</h2>
+        <p data-i18n="about.lead">
+          VentoSail is a global shipping and integrated logistics provider based in China and serving worldwide. 
+          We partner with major carriers and overseas warehouse networks to offer one-stop solutions—booking, trucking, customs brokerage, 
+          clearance, and last-mile delivery—covering Europe, Australia, and other key trunk routes.
         </p>
         <ul class="ticks">
-          <li>主航线：欧洲航线、澳洲航线、跨境电商专线</li>
-          <li>服务模式：整箱 FCL / 拼箱 LCL / 门到门</li>
-          <li>保障体系：时效可控、状态可视、合规先行</li>
+          <li data-i18n="about.li1">Core routes: Europe, Australia, and cross-border eCommerce lanes</li>
+          <li data-i18n="about.li2">Service models: FCL / LCL / Door-to-door</li>
+          <li data-i18n="about.li3">Assurance: predictable lead time, live status visibility, compliance-first</li>
         </ul>
         <div class="cta-row">
-          <a class="btn primary" href="mailto:luoposhandsg@gmail.com">获取方案</a>
-          <a class="btn outline" target="_blank" rel="noopener" href="https://wa.me/8613539080327">WhatsApp 咨询</a>
+          <a class="btn primary" href="mailto:luoposhandsg@gmail.com" data-i18n="about.btnPrimary">Get a Proposal</a>
+          <a class="btn outline" target="_blank" rel="noopener" href="https://wa.me/8613539080327" data-i18n="about.btnSecondary">WhatsApp Consultation</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 公司业务 -->
+  <!-- Services -->
   <section id="services" class="services">
     <div class="container">
-      <h2>公司业务</h2>
-      <p class="section-lead">聚焦核心航线与稳定班期，为进出口企业提供端到端服务。</p>
+      <h2 data-i18n="services.title">Our Services</h2>
+      <p class="section-lead" data-i18n="services.lead">Focused on core routes and stable weekly capacity to deliver end-to-end service for importers and exporters.</p>
       <div class="service-grid">
         <div class="service-card">
           <div class="icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M3 18h18v2H3v-2zm2-8h14l2 6H3l2-6zm2-6h10l2 6H5l2-6z" fill="currentColor"/></svg>
           </div>
-          <h3>欧洲航线</h3>
-          <p>覆盖北欧、西欧、东欧主要港口，支持整箱/拼箱与铁路多式联运。</p>
+          <h3 data-i18n="services.europe.title">Europe Routes</h3>
+          <p data-i18n="services.europe.desc">Serving major ports across Northern, Western, and Eastern Europe with FCL/LCL and rail intermodal options.</p>
         </div>
         <div class="service-card">
           <div class="icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h10v2H4v-2z" fill="currentColor"/></svg>
           </div>
-          <h3>每周航线</h3>
-          <p>固定班期、仓位稳定，适配计划性强的补货与生产安排。</p>
+          <h3 data-i18n="services.weekly.title">Weekly Fixed Services</h3>
+          <p data-i18n="services.weekly.desc">Stable capacity and fixed sailings—ideal for planned replenishment and production schedules.</p>
         </div>
         <div class="service-card">
           <div class="icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 2l4 7H8l4-7zm0 20l-4-7h8l-4 7z" fill="currentColor"/></svg>
           </div>
-          <h3>澳洲航线</h3>
-          <p>覆盖悉尼、墨尔本、布里斯班等主要港口，清关合规经验丰富。</p>
+          <h3 data-i18n="services.au.title">Australia Routes</h3>
+          <p data-i18n="services.au.desc">Sydney, Melbourne, Brisbane, and more—experienced with compliant customs clearance and delivery.</p>
         </div>
         <div class="service-card">
           <div class="icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M3 3h18v4H3V3zm0 7h18v4H3v-4zm0 7h18v4H3v-4z" fill="currentColor"/></svg>
           </div>
-          <h3>定制解决方案</h3>
-          <p>根据货型、时效与预算定制运输方案，优化全链路成本与体验。</p>
+          <h3 data-i18n="services.custom.title">Tailored Solutions</h3>
+          <p data-i18n="services.custom.desc">Customized transport plans by cargo profile, lead time, and budget—optimizing end-to-end cost and experience.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 联系 CTA -->
+  <!-- Contact CTA -->
   <section id="contact" class="cta">
     <div class="container cta-inner">
-      <h2>需要航运方案或报价？</h2>
-      <p>我们将根据您的出货计划与目的港，快速提供最优选项。</p>
+      <h2 data-i18n="cta.title">Need a Shipping Plan or Quote?</h2>
+      <p data-i18n="cta.desc">Share your shipping schedule and destination port—we'll quickly offer the best options.</p>
       <div class="cta-row">
-        <a class="btn primary" href="mailto:luoposhandsg@gmail.com?subject=%5BVentoSail%5D%20%E5%90%88%E4%BD%9C%E5%92%A8%E8%AF%A2">发送邮件</a>
-        <a class="btn dark" target="_blank" rel="noopener" href="https://wa.me/8613539080327?text=Hello%20VentoSail%2C%20I%27d%20like%20to%20inquire%20about%20shipping.">WhatsApp</a>
+        <a class="btn primary" href="mailto:luoposhandsg@gmail.com?subject=%5BVentoSail%5D%20Cooperation%20Inquiry" data-i18n="cta.btnEmail">Send Email</a>
+        <a class="btn dark" target="_blank" rel="noopener" href="https://wa.me/8613539080327?text=Hello%20VentoSail%2C%20I%27d%20like%20to%20inquire%20about%20shipping." data-i18n="cta.btnWhatsApp">WhatsApp</a>
       </div>
     </div>
   </section>
 
-  <!-- 页脚 -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="col">
@@ -174,18 +191,18 @@
           <span class="logo-mark" aria-hidden="true">⛵</span>
           <span class="brand-text">VentoSail</span>
         </div>
-        <p class="muted">致力于为全球客户提供专业、合规与高效的航运与物流服务。</p>
+        <p class="muted" data-i18n="footer.muted">Dedicated to delivering professional, compliant, and efficient shipping & logistics services worldwide.</p>
       </div>
       <div class="col">
-        <h4>快速链接</h4>
+        <h4 data-i18n="footer.quickLinks">Quick Links</h4>
         <ul class="links">
-          <li><a href="#about">公司信息</a></li>
-          <li><a href="#services">公司业务</a></li>
-          <li><a href="mailto:luoposhandsg@gmail.com">商务合作</a></li>
+          <li><a href="#about" data-i18n="footer.linkAbout">About</a></li>
+          <li><a href="#services" data-i18n="footer.linkServices">Services</a></li>
+          <li><a href="mailto:luoposhandsg@gmail.com" data-i18n="footer.linkBiz">Business Cooperation</a></li>
         </ul>
       </div>
       <div class="col">
-        <h4>联系</h4>
+        <h4 data-i18n="footer.contact">Contact</h4>
         <ul class="links">
           <li><a href="mailto:luoposhandsg@gmail.com">Email: luoposhandsg@gmail.com</a></li>
           <li><a target="_blank" rel="noopener" href="https://wa.me/8613539080327">WhatsApp: +86 13539080327</a></li>
@@ -193,17 +210,177 @@
       </div>
     </div>
     <div class="container footnote">
-      <p>© <span id="year"></span> VentoSail. All rights reserved. 本网站所载信息不构成任何形式的承诺或要约，具体以合同为准。</p>
+      <p>
+        © <span id="year"></span> VentoSail. All rights reserved.
+        <span data-i18n="footer.disclaimer">
+          Information on this site does not constitute any form of commitment or offer. Final terms are subject to contract.
+        </span>
+      </p>
       <div class="legal">
-        <a href="#" aria-disabled="true">隐私政策</a>
+        <a href="#" aria-disabled="true" data-i18n="footer.privacy">Privacy Policy</a>
         <span>·</span>
-        <a href="#" aria-disabled="true">服务条款</a>
+        <a href="#" aria-disabled="true" data-i18n="footer.terms">Terms of Service</a>
       </div>
     </div>
   </footer>
 
+  <!-- Your original JS -->
   <script src="assets/js/main.js" defer></script>
-  <noscript>为获得更佳体验，请启用 JavaScript。</noscript>
+
+  <!-- Lightweight i18n (EN/ZH) -->
+  <script>
+    (function () {
+      const dict = {
+        en: {
+          "top.emailLabel": "Email",
+          "top.whatsLabel": "WhatsApp",
+
+          "nav.home": "Home",
+          "nav.about": "About",
+          "nav.services": "Services",
+          "nav.contact": "Contact",
+
+          "hero.s1.title": "Global Shipping · Efficient & Reliable",
+          "hero.s1.desc": "Covering Europe, Australia, and major international routes with end-to-end logistics solutions.",
+          "hero.s2.title": "Weekly Fixed Services",
+          "hero.s2.desc": "Clear schedules and stable capacity to keep your supply chain on beat.",
+          "hero.s3.title": "Expert Team · Full Visibility",
+          "hero.s3.desc": "From booking and customs to final delivery—real-time tracking across the journey.",
+          "hero.s4.title": "Compliance & Safety First",
+          "hero.s4.desc": "Aligned with international regulations to ensure cargo arrives securely.",
+          "hero.s5.title": "Tailored Solutions",
+          "hero.s5.desc": "Optimized routing and cost planning based on cargo type, lead time, and budget.",
+
+          "about.title": "About Us",
+          "about.lead": "VentoSail is a global shipping and integrated logistics provider based in China and serving worldwide. We partner with major carriers and overseas warehouse networks to offer one-stop solutions—booking, trucking, customs brokerage, clearance, and last-mile delivery—covering Europe, Australia, and other key trunk routes.",
+          "about.li1": "Core routes: Europe, Australia, and cross-border eCommerce lanes",
+          "about.li2": "Service models: FCL / LCL / Door-to-door",
+          "about.li3": "Assurance: predictable lead time, live status visibility, compliance-first",
+          "about.btnPrimary": "Get a Proposal",
+          "about.btnSecondary": "WhatsApp Consultation",
+
+          "services.title": "Our Services",
+          "services.lead": "Focused on core routes and stable weekly capacity to deliver end-to-end service for importers and exporters.",
+          "services.europe.title": "Europe Routes",
+          "services.europe.desc": "Serving major ports across Northern, Western, and Eastern Europe with FCL/LCL and rail intermodal options.",
+          "services.weekly.title": "Weekly Fixed Services",
+          "services.weekly.desc": "Stable capacity and fixed sailings—ideal for planned replenishment and production schedules.",
+          "services.au.title": "Australia Routes",
+          "services.au.desc": "Sydney, Melbourne, Brisbane, and more—experienced with compliant customs clearance and delivery.",
+          "services.custom.title": "Tailored Solutions",
+          "services.custom.desc": "Customized transport plans by cargo profile, lead time, and budget—optimizing end-to-end cost and experience.",
+
+          "cta.title": "Need a Shipping Plan or Quote?",
+          "cta.desc": "Share your shipping schedule and destination port—we'll quickly offer the best options.",
+          "cta.btnEmail": "Send Email",
+          "cta.btnWhatsApp": "WhatsApp",
+
+          "footer.muted": "Dedicated to delivering professional, compliant, and efficient shipping & logistics services worldwide.",
+          "footer.quickLinks": "Quick Links",
+          "footer.linkAbout": "About",
+          "footer.linkServices": "Services",
+          "footer.linkBiz": "Business Cooperation",
+          "footer.contact": "Contact",
+          "footer.disclaimer": "Information on this site does not constitute any form of commitment or offer. Final terms are subject to contract.",
+          "footer.privacy": "Privacy Policy",
+          "footer.terms": "Terms of Service"
+        },
+        zh: {
+          "top.emailLabel": "Email",
+          "top.whatsLabel": "WhatsApp",
+
+          "nav.home": "首页",
+          "nav.about": "公司信息",
+          "nav.services": "公司业务",
+          "nav.contact": "联系",
+
+          "hero.s1.title": "全球航运 · 高效稳定",
+          "hero.s1.desc": "覆盖欧洲、澳洲与主要国际航线，提供端到端物流解决方案。",
+          "hero.s2.title": "每周固定航线",
+          "hero.s2.desc": "班期明确、仓位稳定，保障您的供应链节奏。",
+          "hero.s3.title": "专业团队 · 全程可视",
+          "hero.s3.desc": "从订舱、报关到派送，全流程实时跟踪与服务。",
+          "hero.s4.title": "合规安全 · 风险可控",
+          "hero.s4.desc": "严格遵循国际合规标准，确保货物安全抵达。",
+          "hero.s5.title": "定制方案 · 灵活高效",
+          "hero.s5.desc": "根据行业与货型定制最优运输与成本方案。",
+
+          "about.title": "公司信息",
+          "about.lead": "VentoSail 是一家专注于全球航运与综合物流的服务商，立足中国，面向世界。我们与多家船公司与海外仓网络紧密合作，提供覆盖欧洲、澳洲及主要国际干线的订舱、拖车、报关、清关、派送等一体化解决方案。",
+          "about.li1": "主航线：欧洲航线、澳洲航线、跨境电商专线",
+          "about.li2": "服务模式：整箱 FCL / 拼箱 LCL / 门到门",
+          "about.li3": "保障体系：时效可控、状态可视、合规先行",
+          "about.btnPrimary": "获取方案",
+          "about.btnSecondary": "WhatsApp 咨询",
+
+          "services.title": "公司业务",
+          "services.lead": "聚焦核心航线与稳定班期，为进出口企业提供端到端服务。",
+          "services.europe.title": "欧洲航线",
+          "services.europe.desc": "覆盖北欧、西欧、东欧主要港口，支持整箱/拼箱与铁路多式联运。",
+          "services.weekly.title": "每周航线",
+          "services.weekly.desc": "固定班期、仓位稳定，适配计划性强的补货与生产安排。",
+          "services.au.title": "澳洲航线",
+          "services.au.desc": "覆盖悉尼、墨尔本、布里斯班等主要港口，清关合规经验丰富。",
+          "services.custom.title": "定制解决方案",
+          "services.custom.desc": "根据货型、时效与预算定制运输方案，优化全链路成本与体验。",
+
+          "cta.title": "需要航运方案或报价？",
+          "cta.desc": "我们将根据您的出货计划与目的港，快速提供最优选项。",
+          "cta.btnEmail": "发送邮件",
+          "cta.btnWhatsApp": "WhatsApp",
+
+          "footer.muted": "致力于为全球客户提供专业、合规与高效的航运与物流服务。",
+          "footer.quickLinks": "快速链接",
+          "footer.linkAbout": "公司信息",
+          "footer.linkServices": "公司业务",
+          "footer.linkBiz": "商务合作",
+          "footer.contact": "联系",
+          "footer.disclaimer": "本网站所载信息不构成任何形式的承诺或要约，具体以合同为准。",
+          "footer.privacy": "隐私政策",
+          "footer.terms": "服务条款"
+        }
+      };
+
+      const $ = (sel, ctx=document) => Array.from(ctx.querySelectorAll(sel));
+      const apply = (lang) => {
+        const pack = dict[lang] || dict.en;
+        $("[data-i18n]").forEach(el => {
+          const key = el.getAttribute("data-i18n");
+          if (pack[key]) el.textContent = pack[key];
+        });
+        // Update html lang attribute for accessibility/SEO hint
+        document.documentElement.setAttribute("lang", lang === "zh" ? "zh-CN" : "en");
+        // Toggle pressed state
+        $(".lang-switch [data-lang]").forEach(btn => {
+          btn.setAttribute("aria-pressed", btn.dataset.lang === lang ? "true" : "false");
+        });
+        // Persist choice
+        try { localStorage.setItem("vs_lang", lang); } catch(e) {}
+        // Maintain URL param for sharing
+        const url = new URL(window.location.href);
+        url.searchParams.set("lang", lang);
+        window.history.replaceState({}, "", url);
+      };
+
+      const initLang = () => {
+        const urlLang = new URLSearchParams(location.search).get("lang");
+        const stored = (() => { try { return localStorage.getItem("vs_lang"); } catch(e) { return null; }})();
+        const lang = (urlLang === "zh" || urlLang === "en") ? urlLang : (stored || "en");
+        apply(lang);
+      };
+
+      document.addEventListener("DOMContentLoaded", () => {
+        initLang();
+        $(".lang-switch [data-lang]").forEach(btn => {
+          btn.addEventListener("click", () => apply(btn.dataset.lang));
+        });
+        // Year auto-fill
+        const y = document.getElementById("year");
+        if (y) y.textContent = new Date().getFullYear();
+      });
+    })();
+  </script>
+
+  <noscript>Please enable JavaScript for the best experience.</noscript>
 </body>
 </html>
-
