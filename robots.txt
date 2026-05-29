@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gwmgo-cpu.github.io/VentoSail/sitemap.xml
+Sitemap: https://ventosail.com/sitemap.xml
