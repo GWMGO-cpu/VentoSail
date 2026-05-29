@@ -1472,7 +1472,7 @@
 
     @media (max-width: 720px) {
       .container {
-        width: min(100% - 32px, 1180px);
+        width: min(100% - 24px, 1180px);
       }
 
       .site-header {
@@ -1500,22 +1500,69 @@
 
       .hero {
         min-height: auto;
-        background-position: 60% center;
+        padding: 0 0 44px;
+        color: var(--white);
+        background: #071a2b;
+        isolation: isolate;
+      }
+
+      .hero::before {
+        display: none;
+      }
+
+      .hero-carousel {
+        inset: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .hero-carousel::after {
+        background:
+          linear-gradient(180deg, rgba(2, 15, 31, 0.76) 0%, rgba(2, 15, 31, 0.72) 44%, rgba(245, 247, 254, 0.88) 100%),
+          radial-gradient(circle at 64% 18%, rgba(45, 242, 205, 0.18), transparent 34%),
+          radial-gradient(circle at 18% 44%, rgba(110, 61, 247, 0.22), transparent 38%);
+      }
+
+      .hero-slide {
+        object-position: center top;
+        filter: brightness(0.66) saturate(1.05) contrast(1.05);
       }
 
       .hero-grid {
+        width: 100%;
+        max-width: none;
+        margin: 0;
         min-height: auto;
-        padding: 58px 0 34px;
-        gap: 28px;
+        padding: 34px 12px 36px;
+        gap: 18px;
       }
 
       .hero-content-panel {
-        margin-left: 0;
+        width: min(100%, 480px);
+        margin: 0 auto;
+        padding: 30px 14px 14px;
+        border: 0;
+        border-radius: 0;
+        color: var(--white);
+        background: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        text-align: center;
+      }
+
+      .hero-content-panel .eyebrow {
+        justify-content: center;
+        margin-bottom: 16px;
+        color: #d8fff8;
+        font-size: 11px;
+        line-height: 1.35;
       }
 
       h1 {
         font-size: 36px;
-        line-height: 1.08;
+        line-height: 1.06;
         max-width: 100%;
         overflow-wrap: break-word;
       }
@@ -1525,44 +1572,130 @@
       .hero-actions,
       .hero-proof,
       .hero-board {
-        width: calc(100vw - 32px);
-        max-width: calc(100vw - 32px);
-      }
-
-      .hero-content-panel h1,
-      .hero-content-panel .hero-copy,
-      .hero-content-panel .hero-actions,
-      .hero-content-panel .hero-proof {
         width: 100%;
         max-width: 100%;
       }
 
-      .hero-copy {
-        font-size: 16px;
+      .hero-content-panel h1 {
+        width: min(100%, 390px);
+        margin: 0 auto 18px;
+        color: var(--white);
+        text-shadow: 0 14px 34px rgba(1, 19, 35, 0.35);
       }
 
-      .hero-actions,
+      .hero-content-panel .hero-copy {
+        width: min(100%, 390px);
+        margin: 0 auto 24px;
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 15px;
+        line-height: 1.62;
+      }
+
+      .hero-actions {
+        width: min(100%, 380px);
+        margin: 0 auto 16px;
+        display: grid;
+        gap: 10px;
+      }
+
       .form-actions {
         display: grid;
       }
 
       .credential-badge {
-        width: 100%;
+        display: grid;
+        grid-template-columns: 22px 1fr;
+        width: min(100%, 380px);
+        margin: 0 auto;
         align-items: flex-start;
         border-radius: 18px;
+        padding: 12px 14px;
+        color: var(--ink);
+        background: rgba(255, 255, 255, 0.82);
+        text-align: left;
+      }
+
+      .credential-badge span:last-child {
+        grid-column: 2;
+        line-height: 1.4;
       }
 
       .btn {
         width: 100%;
       }
 
+      .hero-actions .btn {
+        min-height: 48px;
+      }
+
+      .hero-actions .btn-primary {
+        background: var(--purple);
+        box-shadow: 0 18px 40px rgba(110, 61, 247, 0.28);
+      }
+
       .hero-proof {
-        grid-template-columns: 1fr;
+        display: none;
+      }
+
+      .hero-board {
+        width: min(100%, 480px);
+        margin: 18px auto 0;
+        border-radius: 22px;
+        color: var(--ink);
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 22px 56px rgba(1, 19, 35, 0.18);
+        backdrop-filter: blur(8px) saturate(1.03);
+        -webkit-backdrop-filter: blur(8px) saturate(1.03);
+      }
+
+      .route-visual {
+        height: 215px;
+        padding: 0;
+      }
+
+      .route-visual::after {
+        left: 50%;
+        right: auto;
+        bottom: 48px;
+        width: 64%;
+        padding: 12px;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 11px;
+        line-height: 1.35;
+      }
+
+      .route-line {
+        inset: 34px 26px 58px;
+        opacity: 0.3;
+      }
+
+      .route-visual-image {
+        opacity: 0.9;
+        filter: brightness(0.94) saturate(1.04) contrast(1.04);
+      }
+
+      .route-node.origin {
+        left: 24px;
+        bottom: 42px;
+      }
+
+      .route-node.middle {
+        left: 51%;
+        top: 72px;
+      }
+
+      .route-node.destination {
+        right: 26px;
+        top: 58px;
       }
 
       .board-row {
         grid-template-columns: 1fr;
         gap: 4px;
+        align-items: start;
+        padding: 14px 16px;
+        background: rgba(255, 255, 255, 0.72);
       }
 
       .board-head {
@@ -1633,10 +1766,10 @@
 
     @media (max-width: 560px) {
       .container {
-        width: 358px;
-        max-width: calc(100% - 32px);
-        margin-left: 16px;
-        margin-right: 16px;
+        width: min(100% - 20px, 1180px);
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       .hero h1,
@@ -1650,8 +1783,8 @@
 
       .hero-carousel,
       .hero::before {
-        inset: 22px 16px 20px;
-        border-radius: 24px;
+        inset: 0;
+        border-radius: 0;
       }
 
       .hero-carousel::after {
@@ -1661,8 +1794,55 @@
       }
 
       .hero-content-panel {
-        padding: 24px 16px;
-        border-radius: 24px;
+        padding: 30px 8px 12px;
+      }
+
+      .hero-grid {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+
+      .hero-board {
+        border-radius: 20px;
+      }
+
+      .route-visual {
+        height: 200px;
+      }
+
+      .route-visual::after {
+        width: 68%;
+        bottom: 44px;
+        font-size: 10px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .brand {
+        font-size: 20px;
+      }
+
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+      }
+
+      .whatsapp-nav-button,
+      .whatsapp-nav-button img {
+        width: 42px;
+        height: 42px;
+      }
+
+      .mobile-toggle {
+        width: 40px;
+        height: 40px;
+      }
+
+      h1 {
+        font-size: 32px;
       }
     }
 
