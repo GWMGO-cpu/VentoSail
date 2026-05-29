@@ -1,0 +1,2426 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ventosail | China Freight Forwarder for FCL, LCL &amp; Trucking</title>
+  <meta name="description" content="Ventosail is a Guangzhou-based freight forwarding partner for FCL ocean freight, LCL consolidation, and trucking from China to Europe, North America, the Middle East, and Africa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@300..700,0..1&amp;display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="https://pub-babc182f2c764ccd9c4c56feaefbe9c4.r2.dev/2026/05/3b878e40ede35ea0e991655cf5431706.jpeg">
+  <style>
+    :root {
+      --ink: #011323;
+      --navy: #011323;
+      --purple: #6e3df7;
+      --purple-2: #8256ff;
+      --mint: #11bf96;
+      --aqua: #2df2cd;
+      --peach: #ffe1d4;
+      --mist: #f5f7fe;
+      --soft: #fbfcff;
+      --lavender: #f5f2fd;
+      --line: #d3daf3;
+      --muted: #4e5a65;
+      --white: #ffffff;
+      --shadow: 0 18px 48px rgba(1, 19, 35, 0.08);
+      --shadow-soft: 0 12px 28px rgba(110, 61, 247, 0.11);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      letter-spacing: 0;
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    .material-symbols-outlined {
+      font-size: 20px;
+      line-height: 1;
+      vertical-align: middle;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(211, 218, 243, 0.72);
+    }
+
+    .nav-shell {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 800;
+      font-size: 28px;
+      color: var(--ink);
+    }
+
+    .brand-mark {
+      width: 58px;
+      height: 58px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 30px;
+      flex: 1;
+    }
+
+    .nav-link,
+    .nav-menu-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      color: #263647;
+      font-size: 14px;
+      font-weight: 700;
+      background: transparent;
+      border: 0;
+      padding: 8px 0;
+      cursor: pointer;
+    }
+
+    .nav-link:hover,
+    .nav-menu-button:hover,
+    .nav-link:focus-visible,
+    .nav-menu-button:focus-visible {
+      color: var(--purple);
+      outline: 0;
+    }
+
+    .nav-menu {
+      position: relative;
+    }
+
+    .mega-menu {
+      position: absolute;
+      top: 44px;
+      left: -18px;
+      width: 660px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 18px;
+      opacity: 0;
+      transform: translateY(8px);
+      visibility: hidden;
+      transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
+    }
+
+    .nav-menu:hover .mega-menu,
+    .nav-menu:focus-within .mega-menu {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+    }
+
+    .mega-column {
+      display: grid;
+      gap: 8px;
+    }
+
+    .mega-eyebrow {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .mega-item {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 10px;
+      align-items: start;
+      padding: 11px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+    }
+
+    .mega-item:hover {
+      background: var(--soft);
+      border-color: var(--line);
+    }
+
+    .mega-icon {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      color: var(--purple);
+      background: var(--lavender);
+    }
+
+    .mega-title {
+      display: block;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    .mega-copy {
+      display: block;
+      margin-top: 3px;
+      font-size: 12px;
+      line-height: 1.45;
+      color: var(--muted);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 0 18px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform 160ms ease, background 160ms ease, border-color 160ms ease, color 160ms ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: var(--navy);
+      color: var(--white);
+      box-shadow: 0 14px 28px rgba(1, 19, 35, 0.16);
+    }
+
+    .btn-primary:hover {
+      background: var(--purple);
+    }
+
+    .btn-secondary {
+      border-color: var(--line);
+      color: var(--ink);
+      background: var(--white);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--purple);
+      color: var(--purple);
+      background: var(--lavender);
+    }
+
+    .btn-outline {
+      border-color: var(--line);
+      color: var(--ink);
+      background: var(--white);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--purple);
+      color: var(--purple);
+    }
+
+    .whatsapp-nav-button {
+      display: inline-grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      flex: 0 0 48px;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      transition: transform 160ms ease, filter 160ms ease;
+    }
+
+    .whatsapp-nav-button:hover {
+      transform: translateY(-1px);
+      filter: drop-shadow(0 10px 18px rgba(37, 211, 102, 0.22));
+    }
+
+    .whatsapp-nav-button:focus-visible {
+      outline: 3px solid rgba(37, 211, 102, 0.24);
+      outline-offset: 3px;
+    }
+
+    .whatsapp-nav-button img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .mobile-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      color: var(--ink);
+    }
+
+    .mobile-panel {
+      display: none;
+      border-top: 1px solid var(--line);
+      background: var(--white);
+    }
+
+    .mobile-panel.open {
+      display: block;
+    }
+
+    .mobile-panel .container {
+      padding: 12px 0 20px;
+      display: grid;
+      gap: 6px;
+    }
+
+    .mobile-panel a {
+      padding: 12px 0;
+      font-size: 15px;
+      font-weight: 700;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 720px;
+      color: var(--ink);
+      overflow: hidden;
+      background: linear-gradient(180deg, #f5f7fe 0%, #ffffff 100%);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 22px;
+      border-radius: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.64);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero-carousel {
+      position: absolute;
+      inset: 22px;
+      z-index: 0;
+      overflow: hidden;
+      border: 1px solid rgba(211, 218, 243, 0.72);
+      border-radius: 28px;
+      background: var(--mist);
+      box-shadow: 0 26px 80px rgba(1, 19, 35, 0.08);
+    }
+
+    .hero-carousel::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background:
+        radial-gradient(circle at 76% 38%, rgba(110, 61, 247, 0.10), transparent 38%),
+        linear-gradient(90deg, rgba(245, 247, 254, 0.82) 0%, rgba(245, 247, 254, 0.60) 43%, rgba(245, 247, 254, 0.34) 76%, rgba(255, 255, 255, 0.22) 100%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.44) 0%, rgba(255, 255, 255, 0.08) 46%, rgba(245, 247, 254, 0.58) 100%);
+      pointer-events: none;
+    }
+
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transform: scale(1.04);
+      animation: heroSlideFade 36s infinite;
+    }
+
+    .hero-slide:nth-child(2) {
+      animation-delay: 12s;
+    }
+
+    .hero-slide:nth-child(3) {
+      animation-delay: 24s;
+    }
+
+    @keyframes heroSlideFade {
+      0%,
+      30% {
+        opacity: 1;
+        transform: scale(1.04);
+      }
+
+      36%,
+      100% {
+        opacity: 0;
+        transform: scale(1.10);
+      }
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      min-height: 720px;
+      display: grid;
+      grid-template-columns: minmax(0, 0.96fr) minmax(400px, 0.8fr);
+      gap: 54px;
+      align-items: center;
+      padding: 80px 0 44px;
+    }
+
+    .hero-grid > * {
+      min-width: 0;
+    }
+
+    .hero-content-panel {
+      position: relative;
+      padding: 30px;
+      margin-left: -30px;
+      border: 1px solid rgba(255, 255, 255, 0.52);
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.28));
+      box-shadow: 0 24px 70px rgba(1, 19, 35, 0.12);
+      backdrop-filter: blur(18px) saturate(1.08);
+      -webkit-backdrop-filter: blur(18px) saturate(1.08);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      color: var(--purple);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 22px;
+      max-width: 790px;
+      font-size: 58px;
+      line-height: 1.08;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 700px;
+      margin-bottom: 32px;
+      color: rgba(1, 19, 35, 0.74);
+      font-size: 18px;
+      line-height: 1.68;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .credential-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 28px;
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink);
+      background: rgba(255, 255, 255, 0.54);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .credential-badge .material-symbols-outlined {
+      color: var(--purple);
+    }
+
+    .credential-badge span:last-child {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .hero-proof {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      max-width: 840px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.44);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .proof-item {
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.22);
+      border-right: 1px solid var(--line);
+    }
+
+    .proof-item:last-child {
+      border-right: 0;
+    }
+
+    .proof-label {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .proof-value {
+      display: block;
+      margin-top: 7px;
+      color: var(--ink);
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .hero-board {
+      align-self: end;
+      width: 100%;
+      min-width: 0;
+      border: 1px solid rgba(255, 255, 255, 0.54);
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.38);
+      box-shadow: 0 28px 80px rgba(1, 19, 35, 0.16);
+      backdrop-filter: blur(20px) saturate(1.08);
+      -webkit-backdrop-filter: blur(20px) saturate(1.08);
+      overflow: hidden;
+    }
+
+    .board-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.26);
+    }
+
+    .board-title {
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .board-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--mint);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 99px;
+      background: var(--mint);
+    }
+
+    .route-visual {
+      position: relative;
+      height: 260px;
+      padding: 22px;
+      background:
+        linear-gradient(180deg, rgba(245, 247, 254, 0.12), rgba(255, 255, 255, 0.04)),
+        linear-gradient(120deg, rgba(110, 61, 247, 0.05), rgba(45, 242, 205, 0.04));
+      overflow: hidden;
+    }
+
+    .route-visual::after {
+      content: "Yantian, China  ->  Global delivery";
+      position: absolute;
+      left: 24%;
+      right: 12%;
+      bottom: 76px;
+      padding: 15px 18px;
+      z-index: 3;
+      border: 1px solid rgba(255, 255, 255, 0.66);
+      border-radius: 16px;
+      color: var(--ink);
+      background: rgba(235, 247, 249, 0.62);
+      box-shadow: 0 16px 34px rgba(1, 19, 35, 0.16);
+      backdrop-filter: blur(10px) saturate(1.08);
+      -webkit-backdrop-filter: blur(10px) saturate(1.08);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .route-line {
+      position: absolute;
+      inset: 42px 34px 52px;
+      z-index: 2;
+      opacity: 0.62;
+      border-top: 2px dashed rgba(110, 61, 247, 0.28);
+      transform: skewY(-8deg);
+    }
+
+    .route-visual-image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      opacity: 0.74;
+      filter: brightness(1.04) saturate(0.98) contrast(1.02);
+      mix-blend-mode: normal;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .route-node {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border: 2px solid var(--white);
+      border-radius: 99px;
+      background: var(--mint);
+      box-shadow: 0 0 0 7px rgba(17, 191, 150, 0.16);
+      z-index: 2;
+    }
+
+    .route-node.origin {
+      left: 36px;
+      bottom: 52px;
+    }
+
+    .route-node.middle {
+      left: 52%;
+      top: 72px;
+      background: var(--purple);
+      box-shadow: 0 0 0 7px rgba(110, 61, 247, 0.16);
+    }
+
+    .route-node.destination {
+      right: 38px;
+      top: 54px;
+      background: var(--aqua);
+      box-shadow: 0 0 0 7px rgba(45, 242, 205, 0.18);
+    }
+
+    .board-rows {
+      display: grid;
+      gap: 1px;
+      background: var(--line);
+    }
+
+    .board-row {
+      display: grid;
+      grid-template-columns: 110px 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 14px 18px;
+      background: rgba(255, 255, 255, 0.34);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .board-row strong {
+      color: var(--ink);
+      font-size: 13px;
+    }
+
+    .section {
+      padding: 92px 0;
+    }
+
+    .section-muted {
+      background: var(--mist);
+    }
+
+    .section-dark {
+      color: var(--ink);
+      background:
+        linear-gradient(135deg, rgba(245, 242, 253, 0.96), rgba(233, 252, 247, 0.92)),
+        var(--lavender);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.58fr);
+      gap: 40px;
+      align-items: end;
+      margin-bottom: 42px;
+    }
+
+    .kicker {
+      margin-bottom: 11px;
+      color: var(--purple);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .section-dark .kicker {
+      color: var(--purple);
+    }
+
+    h2 {
+      margin-bottom: 0;
+      font-size: 42px;
+      line-height: 1.14;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .section-intro {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .section-dark .section-intro {
+      color: var(--muted);
+    }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .pain-card,
+    .service-card,
+    .lane-card,
+    .resource-card,
+    .faq-item {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--white);
+    }
+
+    .pain-card {
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .pain-icon,
+    .service-icon,
+    .lane-icon,
+    .resource-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 18px;
+      border-radius: 14px;
+      color: var(--purple);
+      background: var(--lavender);
+    }
+
+    .pain-card h3,
+    .service-card h3,
+    .lane-card h3,
+    .resource-card h3,
+    .faq-item h3 {
+      margin-bottom: 10px;
+      font-size: 19px;
+      line-height: 1.3;
+      font-weight: 800;
+    }
+
+    .pain-card p,
+    .lane-card p,
+    .resource-card p,
+    .faq-item p {
+      margin-bottom: 0;
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 14px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 160ms ease, box-shadow 160ms ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 54px rgba(110, 61, 247, 0.14);
+    }
+
+    .service-image {
+      height: 210px;
+      margin: 14px 14px 0;
+      border-radius: 18px;
+      background: var(--lavender);
+      overflow: hidden;
+    }
+
+    .service-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .service-body {
+      padding: 24px;
+    }
+
+    .service-body p {
+      margin-bottom: 18px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .service-list {
+      display: grid;
+      gap: 10px;
+      margin: 0 0 22px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .service-list li {
+      display: flex;
+      gap: 9px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .service-list .material-symbols-outlined {
+      color: var(--purple);
+      font-size: 18px;
+      margin-top: 1px;
+    }
+
+    .link-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--purple);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .lane-layout {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .lane-tabs {
+      display: grid;
+      gap: 8px;
+    }
+
+    .lane-tab {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      width: 100%;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      color: var(--ink);
+      background: var(--white);
+      text-align: left;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .lane-tab.active {
+      color: var(--white);
+      border-color: var(--purple);
+      background: var(--purple);
+    }
+
+    .lane-panel {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--white);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .lane-hero {
+      min-height: 270px;
+      padding: 32px;
+      display: grid;
+      align-content: end;
+      color: var(--ink);
+      background:
+        linear-gradient(135deg, rgba(245, 247, 254, 0.94), rgba(255, 255, 255, 0.72)),
+        url("https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1400&q=80");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .lane-hero h3 {
+      margin-bottom: 10px;
+      max-width: 560px;
+      font-size: 30px;
+      line-height: 1.16;
+    }
+
+    .lane-hero p {
+      max-width: 620px;
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .lane-details {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--line);
+    }
+
+    .lane-detail {
+      padding: 20px;
+      background: var(--white);
+    }
+
+    .lane-detail span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .lane-detail strong {
+      display: block;
+      margin-top: 8px;
+      font-size: 15px;
+      line-height: 1.42;
+    }
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      overflow: hidden;
+      background: var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .process-step {
+      min-height: 220px;
+      padding: 22px;
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    .step-number {
+      display: inline-grid;
+      place-items: center;
+      width: 32px;
+      height: 32px;
+      margin-bottom: 28px;
+      border-radius: 8px;
+      color: var(--ink);
+      background: var(--aqua);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .process-step h3 {
+      margin-bottom: 10px;
+      color: var(--ink);
+      font-size: 17px;
+      line-height: 1.3;
+    }
+
+    .process-step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.62;
+    }
+
+    .visibility-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.94fr) minmax(360px, 0.72fr);
+      gap: 48px;
+      align-items: center;
+    }
+
+    .screen {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .screen-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--line);
+      background: var(--soft);
+    }
+
+    .screen-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .screen-dots span {
+      width: 9px;
+      height: 9px;
+      border-radius: 99px;
+      background: var(--line);
+    }
+
+    .screen-title {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .screen-content {
+      display: grid;
+      grid-template-columns: 1fr 0.72fr;
+      gap: 1px;
+      background: var(--line);
+    }
+
+    .screen-map {
+      min-height: 360px;
+      padding: 26px;
+      background:
+        linear-gradient(135deg, rgba(245, 247, 254, 0.98), rgba(245, 242, 253, 0.92)),
+        repeating-linear-gradient(0deg, transparent 0 38px, rgba(211, 218, 243, 0.5) 38px 39px),
+        repeating-linear-gradient(90deg, transparent 0 38px, rgba(211, 218, 243, 0.5) 38px 39px);
+      background-size: cover;
+      background-position: center;
+      color: var(--ink);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .screen-map h3 {
+      position: relative;
+      z-index: 2;
+      width: min(360px, 100%);
+      margin-bottom: 12px;
+      font-size: 28px;
+      line-height: 1.18;
+    }
+
+    .screen-map p {
+      position: relative;
+      z-index: 2;
+      width: min(410px, 100%);
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .map-path {
+      position: absolute;
+      left: 12%;
+      right: 12%;
+      bottom: 72px;
+      height: 90px;
+      z-index: 2;
+      border-top: 2px dashed rgba(110, 61, 247, 0.48);
+      transform: skewY(-9deg);
+    }
+
+    .screen-map-image {
+      position: absolute;
+      left: 26px;
+      right: 26px;
+      bottom: 24px;
+      z-index: 1;
+      width: calc(100% - 52px);
+      height: 150px;
+      border: 1px solid rgba(255, 255, 255, 0.64);
+      border-radius: 20px;
+      object-fit: cover;
+      object-position: center;
+      opacity: 0.88;
+      box-shadow: 0 18px 42px rgba(1, 19, 35, 0.14);
+      filter: saturate(0.94) contrast(0.98);
+    }
+
+    .screen-side {
+      display: grid;
+      gap: 1px;
+      background: var(--line);
+    }
+
+    .status-row {
+      padding: 18px;
+      background: var(--white);
+    }
+
+    .status-row span {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .status-row strong {
+      display: block;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .visibility-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .visibility-item {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .visibility-item .material-symbols-outlined {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--purple);
+      background: var(--lavender);
+    }
+
+    .visibility-item h3 {
+      margin-bottom: 7px;
+      font-size: 18px;
+      line-height: 1.3;
+    }
+
+    .visibility-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .why-item {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.82);
+      box-shadow: var(--shadow);
+    }
+
+    .why-item .material-symbols-outlined {
+      color: var(--purple);
+      margin-bottom: 18px;
+      font-size: 28px;
+    }
+
+    .why-item h3 {
+      margin-bottom: 10px;
+      color: var(--ink);
+      font-size: 18px;
+    }
+
+    .why-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.62;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .resource-card {
+      padding: 24px;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .faq-item {
+      padding: 24px;
+    }
+
+    .contact-section {
+      background: linear-gradient(180deg, var(--white), var(--mist));
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.82fr) minmax(360px, 0.78fr);
+      gap: 46px;
+      align-items: start;
+    }
+
+    .contact-direct {
+      display: grid;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .contact-line {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 14px;
+      align-items: start;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .contact-line .material-symbols-outlined {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--purple);
+      background: var(--lavender);
+    }
+
+    .contact-line span.label {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .contact-line strong,
+    .contact-line a {
+      font-size: 15px;
+      line-height: 1.45;
+      font-weight: 800;
+    }
+
+    .quote-form {
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .quote-form h3 {
+      margin-bottom: 8px;
+      font-size: 24px;
+    }
+
+    .quote-form p {
+      margin-bottom: 22px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .form-field {
+      display: grid;
+      gap: 7px;
+    }
+
+    .form-field.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 11px 12px;
+      color: var(--ink);
+      background: var(--white);
+      outline: 0;
+    }
+
+    textarea {
+      min-height: 112px;
+      resize: vertical;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--purple);
+      box-shadow: 0 0 0 4px rgba(110, 61, 247, 0.12);
+    }
+
+    .form-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .site-footer {
+      color: #dce8ef;
+      background: var(--navy);
+      padding: 54px 0 28px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.72fr 0.72fr 0.72fr 0.9fr;
+      gap: 28px;
+      margin-bottom: 34px;
+    }
+
+    .footer-grid h3,
+    .footer-grid h4 {
+      color: var(--white);
+      margin: 0 0 16px;
+    }
+
+    .footer-grid p,
+    .footer-grid a {
+      color: #aebdca;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .footer-grid ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 9px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      color: #8fa1b2;
+      font-size: 13px;
+    }
+
+    @media (max-width: 1040px) {
+      .desktop-nav {
+        display: none;
+      }
+
+      .mobile-toggle {
+        display: inline-grid;
+        place-items: center;
+      }
+
+      .hero-grid,
+      .section-head,
+      .visibility-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-board {
+        align-self: auto;
+      }
+
+      .pain-grid,
+      .service-grid,
+      .why-grid,
+      .resource-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .lane-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .lane-tabs {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: min(100% - 32px, 1180px);
+      }
+
+      .site-header {
+        position: sticky;
+      }
+
+      .brand {
+        gap: 11px;
+        font-size: 23px;
+      }
+
+      .brand-mark {
+        width: 48px;
+        height: 48px;
+      }
+
+      .nav-shell {
+        min-height: 68px;
+        gap: 12px;
+      }
+
+      .nav-actions {
+        margin-left: auto;
+      }
+
+      .hero {
+        min-height: auto;
+        background-position: 60% center;
+      }
+
+      .hero-grid {
+        min-height: auto;
+        padding: 58px 0 34px;
+        gap: 28px;
+      }
+
+      .hero-content-panel {
+        margin-left: 0;
+      }
+
+      h1 {
+        font-size: 36px;
+        line-height: 1.08;
+        max-width: 100%;
+        overflow-wrap: break-word;
+      }
+
+      .hero h1,
+      .hero-copy,
+      .hero-actions,
+      .hero-proof,
+      .hero-board {
+        width: calc(100vw - 32px);
+        max-width: calc(100vw - 32px);
+      }
+
+      .hero-content-panel h1,
+      .hero-content-panel .hero-copy,
+      .hero-content-panel .hero-actions,
+      .hero-content-panel .hero-proof {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .hero-copy {
+        font-size: 16px;
+      }
+
+      .hero-actions,
+      .form-actions {
+        display: grid;
+      }
+
+      .credential-badge {
+        width: 100%;
+        align-items: flex-start;
+        border-radius: 18px;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero-proof {
+        grid-template-columns: 1fr;
+      }
+
+      .board-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+
+      .board-head {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .board-status {
+        white-space: normal;
+      }
+
+      .section {
+        padding: 68px 0;
+      }
+
+      h2 {
+        font-size: 32px;
+        line-height: 1.18;
+      }
+
+      .pain-grid,
+      .service-grid,
+      .why-grid,
+      .resource-grid,
+      .faq-grid,
+      .lane-tabs,
+      .lane-details,
+      .screen-content,
+      .form-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process {
+        grid-template-columns: 1fr;
+      }
+
+      .process-step {
+        min-height: auto;
+      }
+
+      .service-image {
+        height: 190px;
+      }
+
+      .lane-hero {
+        min-height: 230px;
+        padding: 24px;
+      }
+
+      .screen-map {
+        min-height: 300px;
+      }
+
+      .screen-map-image {
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+        width: calc(100% - 36px);
+        height: 126px;
+        border-radius: 18px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: 358px;
+        max-width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+
+      .hero h1,
+      .hero-copy,
+      .hero-actions,
+      .hero-proof,
+      .hero-board {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .hero-carousel,
+      .hero::before {
+        inset: 22px 16px 20px;
+        border-radius: 24px;
+      }
+
+      .hero-carousel::after {
+        background:
+          linear-gradient(180deg, rgba(245, 247, 254, 0.78) 0%, rgba(245, 247, 254, 0.58) 48%, rgba(245, 247, 254, 0.80) 100%),
+          radial-gradient(circle at 76% 20%, rgba(110, 61, 247, 0.08), transparent 42%);
+      }
+
+      .hero-content-panel {
+        padding: 24px 16px;
+        border-radius: 24px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero-slide {
+        animation: none;
+      }
+
+      .hero-slide:first-child {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Ventosail home">
+        <span class="brand-mark"><img src="https://pub-babc182f2c764ccd9c4c56feaefbe9c4.r2.dev/2026/05/ece2a5a3410fc4197e107688a0856272.png" alt="Ventosail logo"></span>
+        <span>Ventosail</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <div class="nav-menu">
+          <button class="nav-menu-button" type="button">
+            Shipping <span class="material-symbols-outlined">expand_more</span>
+          </button>
+          <div class="mega-menu" role="menu">
+            <div class="mega-column">
+              <span class="mega-eyebrow">Core services</span>
+              <a class="mega-item" href="shipping/fcl-ocean-freight-from-china.html" role="menuitem">
+                <span class="mega-icon"><span class="material-symbols-outlined">directions_boat</span></span>
+                <span>
+                  <span class="mega-title">FCL Ocean Freight</span>
+                  <span class="mega-copy">Full-container shipping from China with carrier, trucking, and milestone coordination.</span>
+                </span>
+              </a>
+              <a class="mega-item" href="shipping/lcl-consolidation-from-china.html" role="menuitem">
+                <span class="mega-icon"><span class="material-symbols-outlined">inventory_2</span></span>
+                <span>
+                  <span class="mega-title">LCL Consolidation</span>
+                  <span class="mega-copy">Flexible consolidation for smaller shipments moving to global destinations.</span>
+                </span>
+              </a>
+              <a class="mega-item" href="shipping/china-trucking-inland-transport.html" role="menuitem">
+                <span class="mega-icon"><span class="material-symbols-outlined">local_shipping</span></span>
+                <span>
+                  <span class="mega-title">Trucking &amp; Inland Transport</span>
+                  <span class="mega-copy">Factory pickup, port drayage, and inland trucking coordination across key lanes.</span>
+                </span>
+              </a>
+            </div>
+            <div class="mega-column">
+              <span class="mega-eyebrow">Built around your shipment</span>
+              <a class="mega-item" href="#process" role="menuitem">
+                <span class="mega-icon"><span class="material-symbols-outlined">route</span></span>
+                <span>
+                  <span class="mega-title">How It Works</span>
+                  <span class="mega-copy">A clear operating flow from quote to delivery handoff.</span>
+                </span>
+              </a>
+              <a class="mega-item" href="#lanes" role="menuitem">
+                <span class="mega-icon"><span class="material-symbols-outlined">public</span></span>
+                <span>
+                  <span class="mega-title">Trade Lanes</span>
+                  <span class="mega-copy">Europe, North America, the Middle East, and Africa.</span>
+                </span>
+              </a>
+              <a class="mega-item" href="#quote" role="menuitem">
+                <span class="mega-icon"><span class="material-symbols-outlined">request_quote</span></span>
+                <span>
+                  <span class="mega-title">Request a Quote</span>
+                  <span class="mega-copy">Send shipment details directly to our Guangzhou team.</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a class="nav-link" href="#lanes">Trade Lanes</a>
+        <a class="nav-link" href="#visibility">Visibility</a>
+        <a class="nav-link" href="#resources">Resources</a>
+        <a class="nav-link" href="about-ventosail-guangzhou-freight-forwarder.html">About Us</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="whatsapp-nav-button" href="https://wa.me/8615013080760" target="_blank" rel="noopener" aria-label="Chat with Ventosail on WhatsApp">
+          <img src="assets/whatsapp-square.png" alt="WhatsApp">
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Open mobile navigation" aria-expanded="false">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-panel" id="mobilePanel">
+      <div class="container">
+        <a href="shipping/fcl-ocean-freight-from-china.html">FCL Ocean Freight</a>
+        <a href="shipping/lcl-consolidation-from-china.html">LCL Consolidation</a>
+        <a href="shipping/china-trucking-inland-transport.html">Trucking &amp; Inland Transport</a>
+        <a href="#lanes">Trade Lanes</a>
+        <a href="#visibility">Visibility</a>
+        <a href="#resources">Resources</a>
+        <a href="about-ventosail-guangzhou-freight-forwarder.html">About Us</a>
+        <a href="#quote">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-carousel" aria-hidden="true">
+        <img class="hero-slide" src="https://pub-babc182f2c764ccd9c4c56feaefbe9c4.r2.dev/2026/05/3b878e40ede35ea0e991655cf5431706.jpeg" alt="">
+        <img class="hero-slide" src="https://pub-babc182f2c764ccd9c4c56feaefbe9c4.r2.dev/2026/05/1eecd2550183866e64905efdcb0f2000.jpeg" alt="">
+        <img class="hero-slide" src="https://pub-babc182f2c764ccd9c4c56feaefbe9c4.r2.dev/2026/05/79250e39c3f0d2941f0a8750449bd442.jpg" alt="">
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-content-panel">
+          <span class="eyebrow"><span class="material-symbols-outlined">location_on</span> Guangzhou-based freight forwarding</span>
+          <h1>China freight forwarding for FCL, LCL and trucking.</h1>
+          <p class="hero-copy">Ventosail coordinates container shipping, consolidation, factory pickup, port trucking, and shipment updates from China to Europe, North America, the Middle East, and Africa.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#quote">
+              <span class="material-symbols-outlined">request_quote</span>
+              Get a Freight Quote
+            </a>
+            <a class="btn btn-secondary" href="https://wa.me/8615013080760" target="_blank" rel="noopener">
+              <span class="material-symbols-outlined">chat</span>
+              WhatsApp a Specialist
+            </a>
+          </div>
+          <div class="credential-badge" aria-label="NVOCC filing credential">
+            <span class="material-symbols-outlined">verified</span>
+            <strong>NVOCC: GD20260509105354</strong>
+            <span>China water transport business filing</span>
+          </div>
+          <div class="hero-proof" aria-label="Ventosail service summary">
+            <div class="proof-item">
+              <span class="proof-label">Origin hub</span>
+              <span class="proof-value">Guangzhou, Guangdong, China</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-label">Credential</span>
+              <span class="proof-value">NVOCC filing on record</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-label">Coverage</span>
+              <span class="proof-value">Europe, North America, Middle East, Africa</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-label">Main services</span>
+              <span class="proof-value">FCL, LCL, Trucking</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-board" aria-label="Shipment coordination preview">
+          <div class="board-head">
+            <span class="board-title">Shipment Coordination Board</span>
+            <span class="board-status"><span class="status-dot"></span> Active lane planning</span>
+          </div>
+          <div class="route-visual">
+            <div class="route-line"></div>
+            <span class="route-node origin" aria-hidden="true"></span>
+            <span class="route-node middle" aria-hidden="true"></span>
+            <span class="route-node destination" aria-hidden="true"></span>
+            <img class="route-visual-image" src="https://pub-babc182f2c764ccd9c4c56feaefbe9c4.r2.dev/2026/05/ff41d2fa1f4b44514f76b931c7961e0f.png" alt="" aria-hidden="true">
+          </div>
+          <div class="board-rows">
+            <div class="board-row">
+              <strong>Origin</strong>
+              <span>Supplier pickup and port handoff in China</span>
+              <span>Ready</span>
+            </div>
+            <div class="board-row">
+              <strong>Freight</strong>
+              <span>FCL or LCL plan matched to cargo volume</span>
+              <span>Planned</span>
+            </div>
+            <div class="board-row">
+              <strong>Updates</strong>
+              <span>Milestone communication from booking to arrival</span>
+              <span>Ongoing</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Built for importers</div>
+            <h2>Freight from China is easier when the operating details are owned locally.</h2>
+          </div>
+          <p class="section-intro">Overseas importers often lose time between suppliers, truckers, warehouses, documents, and sailing schedules. Ventosail gives you a China-based team to coordinate the moving parts before cargo reaches the port.</p>
+        </div>
+        <div class="pain-grid">
+          <article class="pain-card">
+            <span class="pain-icon"><span class="material-symbols-outlined">warehouse</span></span>
+            <h3>Supplier-side coordination</h3>
+            <p>We help organize pickup details, cargo readiness, and handoff requirements so shipment planning starts before the container gate.</p>
+          </article>
+          <article class="pain-card">
+            <span class="pain-icon"><span class="material-symbols-outlined">description</span></span>
+            <h3>Cleaner documentation flow</h3>
+            <p>Commercial invoices, packing details, booking information, and milestones are kept in one working flow with your team.</p>
+          </article>
+          <article class="pain-card">
+            <span class="pain-icon"><span class="material-symbols-outlined">notifications_active</span></span>
+            <h3>Useful shipment updates</h3>
+            <p>Get practical status updates around booking, pickup, departure, arrival, and destination handoff instead of chasing every node yourself.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Shipping services</div>
+            <h2>Core services shaped around volume, schedule, and destination.</h2>
+          </div>
+          <p class="section-intro">The navigation is intentionally simple: FCL for full containers, LCL for flexible consolidation, and trucking for pickup, drayage, and inland movement.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card" id="fcl">
+            <div class="service-image">
+              <img src="https://pub-babc182f2c764ccd9c4c56feaefbe9c4.r2.dev/2026/05/7eda705d66ec89a09e4448a1d84af83a.jpg" alt="Container truck moving through a logistics yard">
+            </div>
+            <div class="service-body">
+              <span class="service-icon"><span class="material-symbols-outlined">directions_boat</span></span>
+              <h3>FCL Ocean Freight</h3>
+              <p>For importers shipping enough cargo to use a dedicated container from China to overseas ports and inland destinations.</p>
+              <ul class="service-list">
+                <li><span class="material-symbols-outlined">check_circle</span>Carrier and sailing schedule coordination</li>
+                <li><span class="material-symbols-outlined">check_circle</span>20GP, 40GP, and 40HQ container planning</li>
+                <li><span class="material-symbols-outlined">check_circle</span>Factory pickup and port drayage support</li>
+              </ul>
+              <a class="link-action" href="shipping/fcl-ocean-freight-from-china.html">Explore FCL service <span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+          </article>
+
+          <article class="service-card" id="lcl">
+            <div class="service-image">
+              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Stacked shipping containers at a port terminal">
+            </div>
+            <div class="service-body">
+              <span class="service-icon"><span class="material-symbols-outlined">inventory_2</span></span>
+              <h3>LCL Ocean Consolidation</h3>
+              <p>For smaller shipments that need reliable ocean freight without paying for a full container.</p>
+              <ul class="service-list">
+                <li><span class="material-symbols-outlined">check_circle</span>Consolidation planning by volume and destination</li>
+                <li><span class="material-symbols-outlined">check_circle</span>Warehouse handoff and cargo readiness checks</li>
+                <li><span class="material-symbols-outlined">check_circle</span>Clear shipment milestones for mixed cargo loads</li>
+              </ul>
+              <a class="link-action" href="shipping/lcl-consolidation-from-china.html">Explore LCL service <span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+          </article>
+
+          <article class="service-card" id="trucking">
+            <div class="service-image">
+              <img src="https://images.unsplash.com/photo-1616432043562-3671ea2e5242?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Freight truck traveling on an expressway">
+            </div>
+            <div class="service-body">
+              <span class="service-icon"><span class="material-symbols-outlined">local_shipping</span></span>
+              <h3>Trucking &amp; Inland Transport</h3>
+              <p>For factory pickup, local drayage, port delivery, and inland transport coordination tied to your ocean shipment.</p>
+              <ul class="service-list">
+                <li><span class="material-symbols-outlined">check_circle</span>Pickup scheduling with Chinese suppliers</li>
+                <li><span class="material-symbols-outlined">check_circle</span>Port handoff and container movement support</li>
+                <li><span class="material-symbols-outlined">check_circle</span>Truck updates aligned with shipping milestones</li>
+              </ul>
+              <a class="link-action" href="shipping/china-trucking-inland-transport.html">Explore trucking service <span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="lanes">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Trade lanes</div>
+            <h2>Focused coverage for the markets your cargo needs to reach.</h2>
+          </div>
+          <p class="section-intro">A tighter lane story helps overseas buyers understand where you are strongest. Ventosail presents coverage by destination market, then matches FCL, LCL, and trucking support to each shipment.</p>
+        </div>
+
+        <div class="lane-layout">
+          <div class="lane-tabs" role="tablist" aria-label="Trade lane regions">
+            <button class="lane-tab active" type="button" data-lane="europe" role="tab" aria-selected="true">Europe <span class="material-symbols-outlined">arrow_forward</span></button>
+            <button class="lane-tab" type="button" data-lane="north-america" role="tab" aria-selected="false">North America <span class="material-symbols-outlined">arrow_forward</span></button>
+            <button class="lane-tab" type="button" data-lane="middle-east" role="tab" aria-selected="false">Middle East <span class="material-symbols-outlined">arrow_forward</span></button>
+            <button class="lane-tab" type="button" data-lane="africa" role="tab" aria-selected="false">Africa <span class="material-symbols-outlined">arrow_forward</span></button>
+          </div>
+
+          <article class="lane-panel" id="lanePanel">
+            <div class="lane-hero" id="laneHero">
+              <h3 id="laneTitle">China to Europe ocean freight and trucking coordination.</h3>
+              <p id="laneCopy">Plan FCL and LCL cargo movement from Chinese suppliers to European ports, with pickup, documentation coordination, and milestone updates handled by a Guangzhou-based team.</p>
+            </div>
+            <div class="lane-details">
+              <div class="lane-detail">
+                <span>Best fit</span>
+                <strong id="laneFit">FCL, LCL, supplier pickup</strong>
+              </div>
+              <div class="lane-detail">
+                <span>Typical support</span>
+                <strong id="laneSupport">Booking, trucking, export handoff, shipment updates</strong>
+              </div>
+              <div class="lane-detail">
+                <span>Origin strength</span>
+                <strong id="laneOrigin">South China supplier coordination</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="process">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="kicker">How it works</div>
+            <h2>A freight process clear enough for your purchasing, finance, and operations teams.</h2>
+          </div>
+          <p class="section-intro">This structure is inspired by the strongest service pages in the market: explain the service, show the operating flow, then make the next action obvious.</p>
+        </div>
+
+        <div class="process">
+          <article class="process-step">
+            <span class="step-number">01</span>
+            <h3>Send details</h3>
+            <p>Share origin, destination, cargo volume, weight, ready date, and preferred service.</p>
+          </article>
+          <article class="process-step">
+            <span class="step-number">02</span>
+            <h3>Receive plan</h3>
+            <p>Get a practical freight plan for FCL, LCL, or trucking support with the needed next steps.</p>
+          </article>
+          <article class="process-step">
+            <span class="step-number">03</span>
+            <h3>Coordinate supplier</h3>
+            <p>We align pickup timing, cargo readiness, and local handoff requirements in China.</p>
+          </article>
+          <article class="process-step">
+            <span class="step-number">04</span>
+            <h3>Book movement</h3>
+            <p>Ocean freight, consolidation, and trucking milestones are organized into one working flow.</p>
+          </article>
+          <article class="process-step">
+            <span class="step-number">05</span>
+            <h3>Track milestones</h3>
+            <p>Your team gets status updates around pickup, departure, arrival, and destination handoff.</p>
+          </article>
+          <article class="process-step">
+            <span class="step-number">06</span>
+            <h3>Close the loop</h3>
+            <p>Documents and shipment records stay organized for your operations and finance teams.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="visibility">
+      <div class="container">
+        <div class="visibility-grid">
+          <div class="screen" aria-label="Shipment visibility interface preview">
+            <div class="screen-top">
+              <div class="screen-dots"><span></span><span></span><span></span></div>
+              <span class="screen-title">Ventosail shipment view</span>
+            </div>
+            <div class="screen-content">
+              <div class="screen-map">
+                <h3>Status, documents, and milestones in one freight conversation.</h3>
+                <p>A clear operating view makes the site feel modern without claiming a heavy software platform you do not yet need to sell.</p>
+                <div class="map-path" aria-hidden="true"></div>
+                <img class="screen-map-image" src="https://pub-babc182f2c764ccd9c4c56feaefbe9c4.r2.dev/2026/05/7b6eab5e1f58f318aadbd9a5d27d55e4.jpg" alt="" aria-hidden="true">
+              </div>
+              <div class="screen-side">
+                <div class="status-row">
+                  <span>Shipment</span>
+                  <strong>FCL from Guangzhou to European market</strong>
+                </div>
+                <div class="status-row">
+                  <span>Current milestone</span>
+                  <strong>Supplier pickup confirmed</strong>
+                </div>
+                <div class="status-row">
+                  <span>Documents</span>
+                  <strong>Commercial invoice and packing details in review</strong>
+                </div>
+                <div class="status-row">
+                  <span>Next update</span>
+                  <strong>Port handoff and booking confirmation</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="kicker">Visibility without noise</div>
+            <h2>Make logistics feel controlled before the customer asks for an update.</h2>
+            <p class="section-intro">The best digital-forward logistics sites sell clarity. For Ventosail, that means promising what a service team can truly deliver: organized milestones, fast communication, and fewer scattered messages.</p>
+            <div class="visibility-list" style="margin-top: 28px;">
+              <article class="visibility-item">
+                <span class="material-symbols-outlined">timeline</span>
+                <div>
+                  <h3>Milestone-based communication</h3>
+                  <p>Updates are tied to concrete freight events rather than vague check-ins.</p>
+                </div>
+              </article>
+              <article class="visibility-item">
+                <span class="material-symbols-outlined">folder_managed</span>
+                <div>
+                  <h3>Document coordination</h3>
+                  <p>Shipment details and working documents are kept aligned with your booking flow.</p>
+                </div>
+              </article>
+              <article class="visibility-item">
+                <span class="material-symbols-outlined">support_agent</span>
+                <div>
+                  <h3>Human specialist support</h3>
+                  <p>Overseas clients can reach your team by email or WhatsApp when the shipment needs attention.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Why Ventosail</div>
+            <h2>A China-side freight partner for buyers who need execution, not empty slogans.</h2>
+          </div>
+          <p class="section-intro">The brand should sound practical, local, and globally fluent: strong enough to win trust, simple enough for an importer to act immediately.</p>
+        </div>
+        <div class="why-grid">
+          <article class="why-item">
+            <span class="material-symbols-outlined">anchor</span>
+            <h3>Guangzhou location</h3>
+            <p>Nansha District gives the website a specific operating base instead of a generic global claim.</p>
+          </article>
+          <article class="why-item">
+            <span class="material-symbols-outlined">hub</span>
+            <h3>Supplier coordination</h3>
+            <p>Support starts where the shipment starts: with the factory, pickup plan, and cargo readiness.</p>
+          </article>
+          <article class="why-item">
+            <span class="material-symbols-outlined">package_2</span>
+            <h3>FCL and LCL clarity</h3>
+            <p>Customers can quickly understand which ocean freight option fits their cargo volume.</p>
+          </article>
+          <article class="why-item">
+            <span class="material-symbols-outlined">forum</span>
+            <h3>Direct communication</h3>
+            <p>Email and WhatsApp are visible throughout the journey, turning interest into conversation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="resources">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Resources</div>
+            <h2>Use helpful content to turn search traffic into freight conversations.</h2>
+          </div>
+          <p class="section-intro">Your future service pages can grow from these resource themes. They answer the questions overseas importers search before they request a quote.</p>
+        </div>
+
+        <div class="resource-grid">
+          <article class="resource-card">
+            <span class="resource-icon"><span class="material-symbols-outlined">view_in_ar</span></span>
+            <h3>FCL vs LCL from China</h3>
+            <p>Explain when a buyer should use a full container and when consolidation is more cost-efficient.</p>
+          </article>
+          <article class="resource-card">
+            <span class="resource-icon"><span class="material-symbols-outlined">request_quote</span></span>
+            <h3>Freight quote checklist</h3>
+            <p>List the shipment details needed for accurate pricing: origin, destination, cargo type, volume, weight, and ready date.</p>
+          </article>
+          <article class="resource-card">
+            <span class="resource-icon"><span class="material-symbols-outlined">map</span></span>
+            <h3>China trade lane guides</h3>
+            <p>Create SEO pages for China to Europe, North America, Middle East, and Africa shipments.</p>
+          </article>
+        </div>
+
+        <div class="faq-grid" aria-label="Frequently asked questions">
+          <article class="faq-item">
+            <h3>What information is needed for a quote?</h3>
+            <p>Origin city or supplier address, destination, cargo description, cartons or pallets, gross weight, CBM, ready date, and preferred service.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Should I choose FCL or LCL?</h3>
+            <p>FCL is usually better when cargo volume justifies a dedicated container. LCL fits smaller shipments that can be consolidated with other cargo.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Can Ventosail coordinate supplier pickup?</h3>
+            <p>Yes. Trucking and pickup coordination are part of the main service scope, especially for China-origin shipments.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Which destination markets are covered?</h3>
+            <p>The current focus is Europe, North America, the Middle East, and Africa, with FCL, LCL, and trucking support matched to shipment needs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="kicker">Contact Ventosail</div>
+          <h2>Send your shipment details to the Guangzhou team.</h2>
+          <p class="section-intro">A strong freight website does not make buyers hunt for the next step. Put the quote path, email, WhatsApp, and address in one clean final section.</p>
+
+          <div class="contact-direct">
+            <div class="contact-line">
+              <span class="material-symbols-outlined">business</span>
+              <div>
+                <span class="label">Company</span>
+                <strong>GUANGZHOU STAR CHINA SAIL INTERNATIONAL FORWARDING CO.,LTD</strong>
+              </div>
+            </div>
+            <div class="contact-line">
+              <span class="material-symbols-outlined">location_on</span>
+              <div>
+                <span class="label">Address</span>
+                <strong>Room 1911-12, No.7 Chuangjing Street, Nansha District, Guangzhou, Guangdong, China</strong>
+              </div>
+            </div>
+            <div class="contact-line">
+              <span class="material-symbols-outlined">mail</span>
+              <div>
+                <span class="label">Email</span>
+                <a href="mailto:service@ventosail.com">service@ventosail.com</a>
+              </div>
+            </div>
+            <div class="contact-line">
+              <span class="material-symbols-outlined">chat</span>
+              <div>
+                <span class="label">WhatsApp</span>
+                <a href="https://wa.me/8615013080760" target="_blank" rel="noopener">+86 15013080760</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quote" aria-label="Freight quote request form">
+          <h3>Request a freight quote</h3>
+          <p>Complete the basics and your email app will open with a structured quote request addressed to Ventosail.</p>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name">
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com">
+            </div>
+            <div class="form-field">
+              <label for="origin">Origin in China</label>
+              <input id="origin" name="origin" type="text" placeholder="City or supplier address">
+            </div>
+            <div class="form-field">
+              <label for="destination">Destination</label>
+              <input id="destination" name="destination" type="text" placeholder="Country, city, port">
+            </div>
+            <div class="form-field">
+              <label for="service">Service</label>
+              <select id="service" name="service">
+                <option>FCL Ocean Freight</option>
+                <option>LCL Ocean Consolidation</option>
+                <option>Trucking &amp; Inland Transport</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="ready">Ready date</label>
+              <input id="ready" name="ready" type="text" placeholder="Estimated date">
+            </div>
+            <div class="form-field full">
+              <label for="cargo">Cargo details</label>
+              <textarea id="cargo" name="cargo" placeholder="Cargo name, cartons/pallets, CBM, gross weight, Incoterms, and any special requirements"></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">
+              <span class="material-symbols-outlined">send</span>
+              Email Quote Request
+            </button>
+            <a class="btn btn-outline" href="https://wa.me/8615013080760" target="_blank" rel="noopener">
+              <span class="material-symbols-outlined">chat</span>
+              WhatsApp Instead
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Ventosail</h3>
+          <p>GUANGZHOU STAR CHINA SAIL INTERNATIONAL FORWARDING CO.,LTD is a Guangzhou-based freight forwarding company focused on FCL, LCL, and trucking services from China to global markets.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="shipping/fcl-ocean-freight-from-china.html">FCL Ocean Freight</a></li>
+            <li><a href="shipping/lcl-consolidation-from-china.html">LCL Consolidation</a></li>
+            <li><a href="shipping/china-trucking-inland-transport.html">Trucking</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Coverage</h4>
+          <ul>
+            <li><a href="#lanes">Europe</a></li>
+            <li><a href="#lanes">North America</a></li>
+            <li><a href="#lanes">Middle East</a></li>
+            <li><a href="#lanes">Africa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about-ventosail-guangzhou-freight-forwarder.html">About Us</a></li>
+            <li><a href="#visibility">Shipment Visibility</a></li>
+            <li><a href="#resources">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:service@ventosail.com">service@ventosail.com</a></li>
+            <li><a href="https://wa.me/8615013080760" target="_blank" rel="noopener">+86 15013080760</a></li>
+            <li><a href="#quote">Request a quote</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>(c) <span id="year"></span> GUANGZHOU STAR CHINA SAIL INTERNATIONAL FORWARDING CO.,LTD. All rights reserved.</span>
+        <span>Guangzhou, Guangdong, China</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileToggle = document.getElementById("mobileToggle");
+    const mobilePanel = document.getElementById("mobilePanel");
+
+    mobileToggle.addEventListener("click", () => {
+      const isOpen = mobilePanel.classList.toggle("open");
+      mobileToggle.setAttribute("aria-expanded", String(isOpen));
+      mobileToggle.querySelector(".material-symbols-outlined").textContent = isOpen ? "close" : "menu";
+    });
+
+    mobilePanel.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobilePanel.classList.remove("open");
+        mobileToggle.setAttribute("aria-expanded", "false");
+        mobileToggle.querySelector(".material-symbols-outlined").textContent = "menu";
+      });
+    });
+
+    const laneData = {
+      europe: {
+        title: "China to Europe ocean freight and trucking coordination.",
+        copy: "Plan FCL and LCL cargo movement from Chinese suppliers to European ports, with pickup, documentation coordination, and milestone updates handled by a Guangzhou-based team.",
+        fit: "FCL, LCL, supplier pickup",
+        support: "Booking, trucking, export handoff, shipment updates",
+        origin: "South China supplier coordination",
+        image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1400&q=80"
+      },
+      "north-america": {
+        title: "China to North America freight planning for importers.",
+        copy: "Coordinate FCL, LCL, and China-side trucking for cargo moving to North American markets, with clear quote inputs and milestone communication.",
+        fit: "Containerized imports, mixed cargo, port-bound freight",
+        support: "Supplier pickup, container planning, document flow",
+        origin: "China factory-to-port execution",
+        image: "https://images.unsplash.com/photo-1565891741441-64926e441838?auto=format&fit=crop&w=1400&q=80"
+      },
+      "middle-east": {
+        title: "China to Middle East shipping support for growing trade lanes.",
+        copy: "Move cargo from Chinese suppliers to Middle East markets with FCL, LCL, and trucking coordination built around cargo readiness and sailing schedules.",
+        fit: "FCL shipments, LCL consolidation, inland pickup",
+        support: "Cargo readiness, booking coordination, milestone updates",
+        origin: "Guangzhou-based operating support",
+        image: "https://images.unsplash.com/photo-1580894894513-541e068a3e2b?auto=format&fit=crop&w=1400&q=80"
+      },
+      africa: {
+        title: "China to Africa freight forwarding with practical origin control.",
+        copy: "Support China-origin ocean freight and trucking requirements for shipments moving to African markets, keeping supplier, cargo, and shipping details aligned.",
+        fit: "FCL, LCL, cargo collection, port handoff",
+        support: "China-side trucking, consolidation planning, shipment records",
+        origin: "Supplier coordination before departure",
+        image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1400&q=80"
+      }
+    };
+
+    const laneTitle = document.getElementById("laneTitle");
+    const laneCopy = document.getElementById("laneCopy");
+    const laneFit = document.getElementById("laneFit");
+    const laneSupport = document.getElementById("laneSupport");
+    const laneOrigin = document.getElementById("laneOrigin");
+    const laneHero = document.getElementById("laneHero");
+
+    document.querySelectorAll(".lane-tab").forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const lane = laneData[tab.dataset.lane];
+        document.querySelectorAll(".lane-tab").forEach((item) => {
+          item.classList.remove("active");
+          item.setAttribute("aria-selected", "false");
+        });
+        tab.classList.add("active");
+        tab.setAttribute("aria-selected", "true");
+        laneTitle.textContent = lane.title;
+        laneCopy.textContent = lane.copy;
+        laneFit.textContent = lane.fit;
+        laneSupport.textContent = lane.support;
+        laneOrigin.textContent = lane.origin;
+        laneHero.style.backgroundImage = `linear-gradient(135deg, rgba(245, 247, 254, 0.94), rgba(255, 255, 255, 0.72)), url("${lane.image}")`;
+      });
+    });
+
+    document.getElementById("quote").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const data = new FormData(form);
+      const subject = encodeURIComponent("Freight quote request from Ventosail website");
+      const body = encodeURIComponent(
+        `Hello Ventosail,\n\nPlease quote this shipment:\n\n` +
+        `Name: ${data.get("name") || ""}\n` +
+        `Email: ${data.get("email") || ""}\n` +
+        `Origin in China: ${data.get("origin") || ""}\n` +
+        `Destination: ${data.get("destination") || ""}\n` +
+        `Service: ${data.get("service") || ""}\n` +
+        `Ready date: ${data.get("ready") || ""}\n` +
+        `Cargo details: ${data.get("cargo") || ""}\n\n` +
+        `Thank you.`
+      );
+      window.location.href = `mailto:service@ventosail.com?subject=${subject}&body=${body}`;
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

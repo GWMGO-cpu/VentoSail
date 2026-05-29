@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Ventosail | Guangzhou China Freight Forwarder</title>
+  <meta name="description" content="About Ventosail, GUANGZHOU STAR CHINA SAIL INTERNATIONAL FORWARDING CO.,LTD, a Guangzhou-based freight forwarder for FCL, LCL, and trucking from China to Europe, North America, the Middle East, and Africa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@300..700,0..1&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/ventosail-service.css">
+  <style>
+    .about-hero {
+      padding: 78px 0 62px;
+      background:
+        linear-gradient(180deg, #ffffff 0%, #f5f7fe 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .about-hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(330px, 0.48fr);
+      gap: 46px;
+      align-items: start;
+    }
+
+    .about-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 22px;
+      color: var(--purple);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .about-hero h1 {
+      max-width: 880px;
+      margin-bottom: 24px;
+      font-size: 64px;
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    .about-lead {
+      max-width: 760px;
+      margin-bottom: 28px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.72;
+    }
+
+    .about-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .company-dossier {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .dossier-head {
+      padding: 22px;
+      border-bottom: 1px solid var(--line);
+      background: var(--mist);
+    }
+
+    .dossier-head span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .dossier-head strong {
+      display: block;
+      margin-top: 8px;
+      font-size: 22px;
+      line-height: 1.18;
+    }
+
+    .dossier-row {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 12px;
+      padding: 18px 22px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .dossier-row:last-child {
+      border-bottom: 0;
+    }
+
+    .dossier-row .material-symbols-outlined {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      color: var(--purple);
+      background: var(--lavender);
+    }
+
+    .dossier-row span:last-child {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .dossier-row strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    .about-strip {
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .about-strip-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--line);
+    }
+
+    .about-strip-item {
+      min-height: 156px;
+      padding: 28px;
+      background: var(--white);
+    }
+
+    .about-strip-item strong {
+      display: block;
+      color: var(--purple);
+      font-size: 38px;
+      line-height: 1;
+      font-weight: 800;
+    }
+
+    .about-strip-item span {
+      display: block;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .about-section {
+      padding: 86px 0;
+    }
+
+    .about-section-muted {
+      background: var(--mist);
+    }
+
+    .about-editorial {
+      display: grid;
+      grid-template-columns: minmax(0, 0.86fr) minmax(320px, 0.54fr);
+      gap: 52px;
+      align-items: start;
+    }
+
+    .about-editorial h2,
+    .about-matrix-head h2 {
+      margin-bottom: 18px;
+      font-size: 42px;
+      line-height: 1.14;
+    }
+
+    .about-editorial p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    .principle-list {
+      display: grid;
+      gap: 1px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--line);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .principle-item {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 16px;
+      padding: 22px;
+      background: var(--white);
+    }
+
+    .principle-item .material-symbols-outlined {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      color: var(--ink);
+      background: var(--aqua);
+    }
+
+    .principle-item h3 {
+      margin-bottom: 7px;
+      font-size: 18px;
+    }
+
+    .principle-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .about-matrix-head {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(280px, 0.48fr);
+      gap: 42px;
+      align-items: end;
+      margin-bottom: 32px;
+    }
+
+    .about-matrix-head p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .about-matrix {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .matrix-card {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .matrix-card h3 {
+      margin: 0;
+      padding: 20px 22px;
+      border-bottom: 1px solid var(--line);
+      font-size: 20px;
+    }
+
+    .matrix-card dl {
+      margin: 0;
+      display: grid;
+      gap: 1px;
+      background: var(--line);
+    }
+
+    .matrix-card div {
+      padding: 16px 22px;
+      background: var(--white);
+    }
+
+    .matrix-card dt {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .matrix-card dd {
+      margin: 6px 0 0;
+      color: var(--ink);
+      font-size: 14px;
+      line-height: 1.55;
+      font-weight: 700;
+    }
+
+    .about-contact-panel {
+      padding: 44px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background:
+        linear-gradient(135deg, rgba(245, 247, 254, 0.96), rgba(233, 252, 247, 0.88)),
+        var(--mist);
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .about-contact-panel h2 {
+      margin-bottom: 10px;
+      font-size: 36px;
+      line-height: 1.16;
+    }
+
+    .about-contact-panel p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 1040px) {
+      .about-hero-grid,
+      .about-editorial,
+      .about-matrix-head,
+      .about-contact-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .about-strip-grid,
+      .about-matrix {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .about-hero {
+        padding: 54px 0 38px;
+      }
+
+      .about-hero h1 {
+        font-size: 40px;
+      }
+
+      .about-lead {
+        font-size: 16px;
+      }
+
+      .about-actions {
+        display: grid;
+      }
+
+      .about-strip-grid,
+      .about-matrix {
+        grid-template-columns: 1fr;
+      }
+
+      .about-section {
+        padding: 66px 0;
+      }
+
+      .about-editorial h2,
+      .about-matrix-head h2 {
+        font-size: 32px;
+      }
+
+      .about-contact-panel {
+        padding: 28px;
+        border-radius: 24px;
+      }
+
+      .about-contact-panel h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Ventosail home">
+        <span class="brand-mark"><img src="https://pub-babc182f2c764ccd9c4c56feaefbe9c4.r2.dev/2026/05/ece2a5a3410fc4197e107688a0856272.png" alt="Ventosail logo"></span>
+        <span>Ventosail</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <div class="nav-menu">
+          <button class="nav-menu-button" type="button">
+            Shipping <span class="material-symbols-outlined">expand_more</span>
+          </button>
+          <div class="mega-menu" role="menu">
+            <div class="mega-column">
+              <span class="mega-eyebrow">Core services</span>
+              <a class="mega-item" href="shipping/fcl-ocean-freight-from-china.html" role="menuitem">
+                <span class="mega-icon"><span class="material-symbols-outlined">directions_boat</span></span>
+                <span>
+                  <span class="mega-title">FCL Ocean Freight</span>
+                  <span class="mega-copy">Full-container shipping from China with carrier, trucking, and milestone coordination.</span>
+                </span>
+              </a>
+              <a class="mega-item" href="shipping/lcl-consolidation-from-china.html" role="menuitem">
+                <span class="mega-icon"><span class="material-symbols-outlined">inventory_2</span></span>
+                <span>
+                  <span class="mega-title">LCL Consolidation</span>
+                  <span class="mega-copy">Flexible consolidation for smaller shipments moving to global destinations.</span>
+                </span>
+              </a>
+              <a class="mega-item" href="shipping/china-trucking-inland-transport.html" role="menuitem">
+                <span class="mega-icon"><span class="material-symbols-outlined">local_shipping</span></span>
+                <span>
+                  <span class="mega-title">Trucking &amp; Inland Transport</span>
+                  <span class="mega-copy">Factory pickup, port drayage, and inland trucking coordination across key lanes.</span>
+                </span>
+              </a>
+            </div>
+            <div class="mega-column">
+              <span class="mega-eyebrow">Built around your shipment</span>
+              <a class="mega-item" href="index.html#process" role="menuitem">
+                <span class="mega-icon"><span class="material-symbols-outlined">route</span></span>
+                <span>
+                  <span class="mega-title">How It Works</span>
+                  <span class="mega-copy">A clear operating flow from quote to delivery handoff.</span>
+                </span>
+              </a>
+              <a class="mega-item" href="index.html#lanes" role="menuitem">
+                <span class="mega-icon"><span class="material-symbols-outlined">public</span></span>
+                <span>
+                  <span class="mega-title">Trade Lanes</span>
+                  <span class="mega-copy">Europe, North America, the Middle East, and Africa.</span>
+                </span>
+              </a>
+              <a class="mega-item" href="index.html#quote" role="menuitem">
+                <span class="mega-icon"><span class="material-symbols-outlined">request_quote</span></span>
+                <span>
+                  <span class="mega-title">Request a Quote</span>
+                  <span class="mega-copy">Send shipment details directly to our Guangzhou team.</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a class="nav-link" href="index.html#lanes">Trade Lanes</a>
+        <a class="nav-link" href="index.html#visibility">Visibility</a>
+        <a class="nav-link" href="index.html#resources">Resources</a>
+        <a class="nav-link" href="about-ventosail-guangzhou-freight-forwarder.html">About Us</a>
+        <a class="nav-link" href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="whatsapp-nav-button" href="https://wa.me/8615013080760" target="_blank" rel="noopener" aria-label="Chat with Ventosail on WhatsApp">
+          <img src="assets/whatsapp-square.png" alt="WhatsApp">
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Open mobile navigation" aria-expanded="false">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-panel" id="mobilePanel">
+      <div class="container">
+        <a href="shipping/fcl-ocean-freight-from-china.html">FCL Ocean Freight</a>
+        <a href="shipping/lcl-consolidation-from-china.html">LCL Consolidation</a>
+        <a href="shipping/china-trucking-inland-transport.html">Trucking &amp; Inland Transport</a>
+        <a href="index.html#lanes">Trade Lanes</a>
+        <a href="index.html#visibility">Visibility</a>
+        <a href="index.html#resources">Resources</a>
+        <a href="about-ventosail-guangzhou-freight-forwarder.html">About Us</a>
+        <a href="index.html#quote">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="about-hero">
+      <div class="container about-hero-grid">
+        <div>
+          <a class="about-kicker" href="index.html"><span class="material-symbols-outlined">arrow_back</span> Ventosail home</a>
+          <h1>China-origin freight forwarding, operated from Guangzhou.</h1>
+          <p class="about-lead">Ventosail is the trade name of GUANGZHOU STAR CHINA SAIL INTERNATIONAL FORWARDING CO.,LTD, a Guangzhou-based freight forwarding company helping overseas importers coordinate FCL ocean freight, LCL consolidation, and China-side trucking.</p>
+          <div class="about-actions">
+            <a class="btn btn-primary" href="index.html#quote"><span class="material-symbols-outlined">request_quote</span>Request a Freight Quote</a>
+            <a class="btn btn-secondary" href="https://wa.me/8615013080760" target="_blank" rel="noopener"><span class="material-symbols-outlined">chat</span>WhatsApp Ventosail</a>
+          </div>
+        </div>
+
+        <aside class="company-dossier" aria-label="Ventosail company details">
+          <div class="dossier-head">
+            <span>Company dossier</span>
+            <strong>GUANGZHOU STAR CHINA SAIL INTERNATIONAL FORWARDING CO.,LTD</strong>
+          </div>
+          <div class="dossier-row">
+            <span class="material-symbols-outlined">verified</span>
+            <span><strong>NVOCC filing</strong>GD20260509105354, China water transport business filing.</span>
+          </div>
+          <div class="dossier-row">
+            <span class="material-symbols-outlined">location_on</span>
+            <span><strong>Office address</strong>Room 1911-12, No.7 Chuangjing Street, Nansha District, Guangzhou, Guangdong, China.</span>
+          </div>
+          <div class="dossier-row">
+            <span class="material-symbols-outlined">support_agent</span>
+            <span><strong>Direct contact</strong>service@ventosail.com<br>WhatsApp: +86 15013080760</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="about-strip">
+      <div class="container about-strip-grid">
+        <div class="about-strip-item">
+          <strong>GZ</strong>
+          <span>Guangzhou, Guangdong operating base for China-side freight coordination.</span>
+        </div>
+        <div class="about-strip-item">
+          <strong>NVOCC</strong>
+          <span>GD20260509105354 filing credential shown as a trust signal for buyers.</span>
+        </div>
+        <div class="about-strip-item">
+          <strong>3</strong>
+          <span>Core services: FCL ocean freight, LCL consolidation, and trucking.</span>
+        </div>
+        <div class="about-strip-item">
+          <strong>4</strong>
+          <span>Primary destination regions: Europe, North America, Middle East, Africa.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container about-editorial">
+        <div>
+          <div class="about-kicker"><span class="material-symbols-outlined">corporate_fare</span> Who we are</div>
+          <h2>A freight partner for importers who need China-side control before cargo reaches the port.</h2>
+          <p>Overseas importers often lose time between supplier readiness, pickup arrangements, container planning, warehouse handoff, and document updates. Ventosail is positioned to make those origin-side details easier to coordinate from China.</p>
+          <p>The company focuses on practical execution rather than vague global claims: understand the cargo, choose the right freight mode, align the supplier and trucking handoff, and keep the importer informed as the shipment moves.</p>
+        </div>
+
+        <div class="principle-list">
+          <div class="principle-item">
+            <span class="material-symbols-outlined">fact_check</span>
+            <div>
+              <h3>Work from shipment facts</h3>
+              <p>Cargo size, weight, pickup point, destination, and readiness date shape the plan.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="material-symbols-outlined">hub</span>
+            <div>
+              <h3>Keep parties aligned</h3>
+              <p>Supplier, trucker, warehouse, and port handoff information stays in one operating flow.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="material-symbols-outlined">mark_email_read</span>
+            <div>
+              <h3>Communicate milestones</h3>
+              <p>Importers need clear updates around booking, pickup, departure, arrival, and documents.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section about-section-muted">
+      <div class="container">
+        <div class="about-matrix-head">
+          <div>
+            <div class="about-kicker"><span class="material-symbols-outlined">inventory_2</span> What we handle</div>
+            <h2>Three freight services, one China-side operating team.</h2>
+          </div>
+          <p>Ventosail presents its service scope clearly so overseas buyers know when to use FCL, when LCL is more practical, and how trucking connects factory pickup to the ocean freight plan.</p>
+        </div>
+
+        <div class="about-matrix">
+          <article class="matrix-card">
+            <h3>FCL Ocean Freight</h3>
+            <dl>
+              <div>
+                <dt>Best fit</dt>
+                <dd>20GP, 40GP, and 40HQ cargo needing dedicated container space.</dd>
+              </div>
+              <div>
+                <dt>Origin support</dt>
+                <dd>Supplier readiness, trucking, port handoff, and sailing coordination.</dd>
+              </div>
+              <div>
+                <dt>Coverage</dt>
+                <dd>Europe, North America, Middle East, and Africa.</dd>
+              </div>
+            </dl>
+          </article>
+          <article class="matrix-card">
+            <h3>LCL Consolidation</h3>
+            <dl>
+              <div>
+                <dt>Best fit</dt>
+                <dd>Smaller cargo volumes measured by cartons, pallets, CBM, and weight.</dd>
+              </div>
+              <div>
+                <dt>Origin support</dt>
+                <dd>Pickup, warehouse handoff, consolidation records, and shipment milestones.</dd>
+              </div>
+              <div>
+                <dt>Coverage</dt>
+                <dd>Flexible ocean freight from China to major destination markets.</dd>
+              </div>
+            </dl>
+          </article>
+          <article class="matrix-card">
+            <h3>Trucking &amp; Inland Transport</h3>
+            <dl>
+              <div>
+                <dt>Best fit</dt>
+                <dd>Factory pickup, port drayage, and origin-side cargo handoff.</dd>
+              </div>
+              <div>
+                <dt>Origin support</dt>
+                <dd>Pickup scheduling, supplier communication, vehicle planning, and handoff details.</dd>
+              </div>
+              <div>
+                <dt>Connected with</dt>
+                <dd>FCL and LCL shipments that start at Chinese factories or suppliers.</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <div class="about-contact-panel">
+          <div>
+            <div class="about-kicker"><span class="material-symbols-outlined">support_agent</span> Contact Ventosail</div>
+            <h2>Talk with a Guangzhou freight forwarding team.</h2>
+            <p>Email service@ventosail.com or message WhatsApp +86 15013080760 with your cargo details, origin in China, destination, and preferred freight service.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="index.html#quote"><span class="material-symbols-outlined">request_quote</span>Request a Quote</a>
+            <a class="btn btn-secondary" href="https://wa.me/8615013080760" target="_blank" rel="noopener"><span class="material-symbols-outlined">chat</span>WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Ventosail</h3>
+          <p>GUANGZHOU STAR CHINA SAIL INTERNATIONAL FORWARDING CO.,LTD is a Guangzhou-based freight forwarding company focused on FCL, LCL, and trucking services from China to global markets.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="shipping/fcl-ocean-freight-from-china.html">FCL Ocean Freight</a></li>
+            <li><a href="shipping/lcl-consolidation-from-china.html">LCL Consolidation</a></li>
+            <li><a href="shipping/china-trucking-inland-transport.html">Trucking</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Coverage</h4>
+          <ul>
+            <li><a href="index.html#lanes">Europe</a></li>
+            <li><a href="index.html#lanes">North America</a></li>
+            <li><a href="index.html#lanes">Middle East</a></li>
+            <li><a href="index.html#lanes">Africa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about-ventosail-guangzhou-freight-forwarder.html">About Us</a></li>
+            <li><a href="index.html#visibility">Shipment Visibility</a></li>
+            <li><a href="index.html#resources">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:service@ventosail.com">service@ventosail.com</a></li>
+            <li><a href="https://wa.me/8615013080760" target="_blank" rel="noopener">+86 15013080760</a></li>
+            <li><a href="index.html#quote">Request a quote</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>(c) <span data-year></span> GUANGZHOU STAR CHINA SAIL INTERNATIONAL FORWARDING CO.,LTD. All rights reserved.</span>
+        <span>Guangzhou, Guangdong, China</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/ventosail-service.js"></script>
+</body>
+</html>
